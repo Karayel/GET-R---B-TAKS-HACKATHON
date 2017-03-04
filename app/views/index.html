@@ -1,0 +1,30 @@
+<h2>Task 1 - Backend </h2>
+<div>
+    <p>Senden Heroku üzerinde node.js ile basit bir uygulama yazmanı istiyoruz.
+        <code class="inline">https://katilimci-app-ismi.herokuapp.com/getRecord</code> adresine aşağıdaki formatta <code class="inline">HTTP POST</code>
+        isteği yapacağız.
+    </p>
+    <p>Örnek istek:<br></p>
+    <code class="full">
+        {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"key" : "chp8vgSkJDbyDKAS"<br>
+        }
+    </code>
+    <p>Bu uygulama aşağıdaki bilgilerle mongoDB'ye bağlanmalı ve <code class="inline">"records"</code> kolleksiyonundan
+        senden istediğimiz kaydı bulup dönmeli;
+        <code class="inline">mongodb://dbUser:dbPassword@ds155428.mlab.com:55428/getir-bitaksi-hackathon</code>
+    </p>
+    <p>Beklediğimiz cevabın formatı da aşağıda:</p>
+    <p>Örnek cevap:<br></p>
+    <code class="full">
+        {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"key" : "chp8vgSkJDbyDKAS",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"value" : "9sScg6DaMLbMTgLdPADPYJTyOd6AgHDs9SZNkgGTlHeQF",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"createdAt" : "2016-01-26"<br>
+        }
+    </code>
+    <p> Sonrasında kodunun repo'sunu public bir şekilde Github'a gönder.</p>
+    <p>Github reponun ve Heroku'da açtığın uygulamanın adresini <code class="inline">hackathon@getir.com</code>'a email
+        at.
+    </p>
+</div>

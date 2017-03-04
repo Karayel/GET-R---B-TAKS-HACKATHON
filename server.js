@@ -19,6 +19,13 @@ mongoose.connect(config.database); // connect to database
 // use body parser so we can get info from POST and/or URL parameters
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.set('views', __dirname + '/app/views');
+app.engine('html', require('ejs').renderFile);
+
+
+app.get('/',function(req,res){
+	res.render('index.html');
+})
 
 
 app.post('/getRecord',function(req,res){
